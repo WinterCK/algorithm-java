@@ -9,7 +9,7 @@ package org.algorithm.chenjk.base;
  * 3. 对每一子问题求解，得到子问题的局部最优解。
  * 4. 把子问题的解局部最优解合成原来解问题的一个解。
  * @description:
- * @author: jason
+ * @author: jack
  * @create: 2023-03-26 12:20
  **/
 public class GreedyAlgorithm {

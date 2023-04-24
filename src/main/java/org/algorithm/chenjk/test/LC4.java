@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @project: algorithm-test
  * @description: 977 有序数组的平方
- * @author: chenjk
+ * @author: jack
  * @create: 2022-03-06 14:43
  **/
 public class LC4 {

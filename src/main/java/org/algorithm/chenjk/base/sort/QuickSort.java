@@ -5,20 +5,20 @@ import java.util.Arrays;
 /**
  * @project: QuickSort
  * @description: 快速排序 O(nlogn) 空间 O(1)
- * @author: jason
+ * @author: jack
  * @create: 2022-08-14 17:46
  **/
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] arr = new int[] {2,6,5,4,2,4};
+        int[] arr = new int[] {6,2,5,4,2,4};
         quickSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
     /**
      * 快速排序
-     * @param nums
+     * @param nums 数组
      */
     private static void quickSort(int[] nums) {
         int low = 0;

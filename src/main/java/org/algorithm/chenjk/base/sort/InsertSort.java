@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @project: InsertSort
  * @description: 插入排序: 时间 O(N2), 空间 O(1)
- * @author: jason
+ * @author: jack
  * @create: 2022-08-14 17:48
  **/
 public class InsertSort {

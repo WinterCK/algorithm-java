@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @class: MaxHeap 大顶堆: 根节点的数据为最大值
  * @description: 堆排序 O(nlogn)
- * @author: jason
+ * @author: jack
  * @create: 2023-04-23 21:56
  **/
 public class MaxHeap_AscSort {

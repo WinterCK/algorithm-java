@@ -1,14 +1,14 @@
 package org.algorithm.chenjk.lc;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @project: algorithm-test
- * @description: 4.寻找两个正序数组的中位数:给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 中位数 。
+ * @description: 4.寻找两个正序数组的中位数:给定两个大小分别为 m 和 n 的正序（从小到大）数组nums1 和nums2。
+ * 请你找出并返回这两个正序数组的 中位数 。
+ * 中位数含义:像一条分界线,将数据分成前半部分和后半部分,因此用来代表一组数据的“中等水平”
+ * 中位数的公式：则当N为奇数时，m= x(N+1)/2, 即中间的数；当N为偶数时，m=[x(N/2) + x(N/2+1)]/2，即中间+中间+1的数的平均数
  *
  * 算法的时间复杂度应该为 O(log (m+n)) 。
- * @author: chenjk
+ * @author: jack
  * @create: 2022-08-14 18:16
  **/
 public class L4 {
@@ -28,11 +28,13 @@ public class L4 {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int length1 = nums1.length, length2 = nums2.length;
         int totalLength = length1 + length2;
+        // 如果为奇数
         if (totalLength % 2 == 1) {
             int midIndex = totalLength / 2;
             double median = getKthElement(nums1, nums2, midIndex + 1);
             return median;
         } else {
+            // 为偶数
             int midIndex1 = totalLength / 2 - 1, midIndex2 = totalLength / 2;
             double median = (getKthElement(nums1, nums2, midIndex1 + 1) + getKthElement(nums1, nums2, midIndex2 + 1)) / 2.0;
             return median;

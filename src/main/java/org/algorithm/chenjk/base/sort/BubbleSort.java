@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @project: BubbleSort
  * @description: 冒泡排序：时间 O(N2), 空间 O(1)
- * @author: jason
+ * @author: jack
  * @create: 2022-03-03 22:09
  **/
 public class BubbleSort {
@@ -23,7 +23,9 @@ public class BubbleSort {
      */
     private static void bubbleSort(int[] nums) {
         int tmp = 0;
+        // 排序次数
         for (int i = 0; i < nums.length - 1; i++) {
+            // 真正的排序，从0开始
             for (int j = 0; j < nums.length - i - 1; j++) {
                 if (nums[j] > nums[j + 1]) {
                     tmp = nums[j];

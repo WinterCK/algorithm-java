@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @class: MinHeap_DescSort 最小堆，用来做降序排序
  * @description: 数组降序排序
- * @author: jason
+ * @author: jack
  * @create: 2023-04-23 22:39
  **/
 public class MinHeap_DescSort {

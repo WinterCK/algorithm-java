@@ -11,7 +11,7 @@ import org.algorithm.chenjk.base.model.ListNode;
  * 输出：[7,0,8]
  * 解释：342 + 465 = 807.
  *
- * @author: chenjk
+ * @author: jack
  * @create: 2023-03-01 23:41
  **/
 public class L2 {

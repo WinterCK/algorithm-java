@@ -3,7 +3,7 @@ package org.algorithm.chenjk.base.model;
 /**
  * @project: algorithm-test
  * @description: LC 链表Node常用数据结构
- * @author: chenjk
+ * @author: jack
  * @create: 2023-03-01 23:41
  **/
 public class ListNode {

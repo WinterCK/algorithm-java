@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @project: algorithm-test
  * @description:
- * @author: chenjk
+ * @author: jack
  * @create: 2022-03-01 16:30
  **/
 public class LC1 {

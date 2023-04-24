@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * @project: algorithm-test
  * @description: 存在重复元素
- * @author: chenjk
+ * @author: jack
  * @create: 2022-03-14 18:33
  **/
 public class LC5 {

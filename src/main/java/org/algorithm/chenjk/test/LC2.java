@@ -3,7 +3,7 @@ package org.algorithm.chenjk.test;
 /**
  * @project: algorithm-test
  * @description:
- * @author: chenjk
+ * @author: jack
  * @create: 2022-03-06 00:03
  **/
 public class LC2 {

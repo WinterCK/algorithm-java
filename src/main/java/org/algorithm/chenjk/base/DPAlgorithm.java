@@ -6,7 +6,7 @@ package org.algorithm.chenjk.base;
  * 对于一个可拆分问题中
  * 存在可以由前若干项计算 当前项的问题
  * 可以由动态规算法
- * @author: jason
+ * @author: jack
  * @create: 2022-03-16 23:41
  **/
 public class DPAlgorithm {
@@ -41,8 +41,8 @@ public class DPAlgorithm {
      * else
      *   Max(r, j) = Max( MaxSum(r+1,j), MaxSum(r+1, j+1) ) + D(r, j)
      *
-     *   jason:
-     *   状态定义: f(i，j)是第i行j列项最大取数和，求第n行 fn，m（0 < m < n）中最大值。
+     *   jack:
+     *   状态定义: f(i，j)是第i行j列项最大取数和，求第n行 f(n，m)（0 < m < n）中最大值。
      *   f(i,j) = max{ f(i-1, j), f(i-1, j-1)} + num[i,j]
      *   if[i=0], f(i,j) = num(i,j)
      *

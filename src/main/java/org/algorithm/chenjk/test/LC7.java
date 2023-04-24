@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * @project: algorithm-test
  * @description: 12 整数转罗马
- * @author: chenjk
+ * @author: jack
  * @create: 2022-03-16 23:58
  **/
 public class LC7 {

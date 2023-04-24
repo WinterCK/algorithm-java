@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @project: algorithm-test
  * @description: 189-轮转数组
- * @author: chenjk
+ * @author: jack
  * @create: 2022-03-06 14:23
  **/
 public class LC3 {

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @project: MergeSort
  * @description: 归并排序，稳定排序，O(nlogN), 空间: O(N)
- * @author: chenjk
+ * @author: jack
  * @create: 2022-03-03 22:18
  **/
 public class MergeSort {
@@ -30,6 +30,7 @@ public class MergeSort {
      * @param high high
      */
     private static void sort(int[] nums, int low, int high) {
+        // low+high 这种方式可能超出int范围
         int mid = (low + high) / 2;
         if (low < high) {
             sort(nums, low, mid);
@@ -51,7 +52,7 @@ public class MergeSort {
             }
         }
 
-        // j 跑完了
+        // j 跑完了, j和i的逻辑这里实际隐藏了一个if条件： if j > high  /  if i > mid
         while (i <= mid) {
             tmp[k++] = nums[i++];
         }
@@ -62,7 +63,7 @@ public class MergeSort {
         }
 
         // 将tmp排好序的值放到 nums原数组中
-        for (int x = 0; x < tmp.length; x++ ) {
+        for (int x = 0; x < tmp.length; x++) {
             nums[x + low] = tmp[x];
         }
         // x循环 和while循环 两种方式都可以

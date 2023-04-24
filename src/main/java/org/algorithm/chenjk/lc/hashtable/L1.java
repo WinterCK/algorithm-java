@@ -8,7 +8,7 @@ import java.util.Map;
  * @project: algorithm-test
  * @description: 1. 两数之和: 给定一个整数数组 nums 和一个整数目标值 target，
  * 请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标
- * @author: chenjk
+ * @author: jack
  * @create: 2022-08-14 17:55
  **/
 public class L1 {
