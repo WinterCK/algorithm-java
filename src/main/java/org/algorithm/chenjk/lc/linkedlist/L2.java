@@ -26,9 +26,9 @@ public class L2 {
 
     /**
      * 数学运算 ,时间O(1)
-     * @param l1
-     * @param l2
-     * @return
+     * @param l1 链表1
+     * @param l2 链表2
+     * @return 新链表
      */
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int x = 1, y = 1;
@@ -47,14 +47,16 @@ public class L2 {
         ListNode res = new ListNode();
         ListNode head = res;
         String z = String.valueOf(val);
-        ListNode before = new ListNode();
+        ListNode endRecord = new ListNode();
+        // 从后到前取值，以达到逆序效果
         for (int i = z.length() - 1; i >= 0 ; i--) {
             res.val = Integer.parseInt(String.valueOf(z.charAt(i)));
             res.next = new ListNode();
-            before = res;
+            endRecord = res;
             res = res.next;
         }
-        before.next = null;
+        // 用endRecord是为了不让最后一个ListNode 的next 为一个new ListNode()
+        endRecord.next = null;
         return head;
     }
 }
