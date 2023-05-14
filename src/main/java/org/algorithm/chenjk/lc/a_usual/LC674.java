@@ -1,4 +1,4 @@
-package org.algorithm.chenjk.lc.offer;
+package org.algorithm.chenjk.lc.a_usual;
 
 /**
  * @class: LC674
@@ -22,6 +22,7 @@ public class LC674 {
         int n = nums.length;
         int start = 0;
         for (int i = 0; i < n; i++) {
+            // ans会一直增加 直到 nums[i] 比前一个(nums[i-1])小
             if (i > 0 && nums[i] <= nums[i - 1]) {
                 start = i;
             }

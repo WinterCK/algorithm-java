@@ -1,72 +1,50 @@
-# 基础
-## 二叉树
-二叉树（英语：Binary tree）在计算机科学中，二叉树是每个节点最多有两个子树的树结构。通常子树被称作“左子树”（left subtree）和“右子树”（right subtree）。
-二叉树常被用于实现二叉查找树和二叉堆。
-### 树和二叉树的三个主要差别：
-- 树的结点个数至少为 1，而二叉树的结点个数可以为 0
-- 树中结点的最大度数没有限制，而二叉树结点的最大度数为 2
-- 树的结点无左、右之分，而二叉树的结点有左、右之分
+# 记录
 
-二叉树又分为完全二叉树（complete binary tree）和满二叉树（full binary tree）
+## Basic
+### Sort
+- [冒泡排序](src/main/java/org/algorithm/chenjk/base/sort/BubbleSort.java)
+- [插入排序](src/main/java/org/algorithm/chenjk/base/sort/InsertSort.java)
+- [归并排序](src/main/java/org/algorithm/chenjk/base/sort/MergeSort.java)
+- [快速排序](src/main/java/org/algorithm/chenjk/base/sort/QuickSort.java)
+- [堆排序: 最大堆升序](src/main/java/org/algorithm/chenjk/base/sort/heap/MaxHeap_AscSort.java)
+- [堆排序: 最小堆降序](src/main/java/org/algorithm/chenjk/base/sort/heap/MinHeap_DescSort.java)
+- [二叉树前中后序遍历](src/main/java/org/algorithm/chenjk/base/tree/BinaryTree.java)
 
-满：深度为k，且节点数=2k
-![img.png](doc/heap/full-tree.png)
-完全二叉树：深度为 k，有 n 个节点的二叉树，当且仅当其每一个节点都与深度为 k 的满二叉树中序号为 1 至 n 的节点对应时，称之为完全二叉树
-![img.png](doc/heap/complete-tree.png)
+### Search
+- [L124 DFS 二叉树的最大路径和](src/main/java/org/algorithm/chenjk/lc/search/LC124_DFS_DP.java)
+- [L200 DFS 岛屿数量](src/main/java/org/algorithm/chenjk/lc/search/LC200_DFS.java)
+- [L98 DFS 判断其是否是一个有效的二叉搜索树](src/main/java/org/algorithm/chenjk/lc/search/LC98_DFS.java)
+- [L99恢复二叉搜索树](src/main/java/org/algorithm/chenjk/lc/search/LC99_DFS.java)
+- [L100 DFS 相同的树](src/main/java/org/algorithm/chenjk/lc/search/LC100_DFS.java)
 
-# 堆排序
+### DP
+- [LC62 不同路径: 左上角到右下角的最大路径数量](src/main/java/org/algorithm/chenjk/base/dp/LC62.java)
+- [LC63 不同路径2: 存在障碍物时最大路径数量](src/main/java/org/algorithm/chenjk/base/dp/LC63.java)
+- [LC64  m x n网格最小路径和](src/main/java/org/algorithm/chenjk/base/dp/LC64.java)
+- [LC129 二叉树中的最大路径和](src/main/java/org/algorithm/chenjk/base/dp/LC124.java)
+- [LC174 地下城游戏](src/main/java/org/algorithm/chenjk/base/dp/LC174.java)
 
-## 二叉堆
-堆（二叉堆）可以视为一棵完全的二叉树，完全二叉树的一个“优秀”的性质是，除了最底层之外，每一层都是满的，这使得堆可以利用数组来表示（普通的一般的二叉树通常用链表作为基本容器表示），每一个结点对应数组中的一个元素。
+### Other
+- [贪心算法](src/main/java/org/algorithm/chenjk/base/GreedyAlgorithm.java)
+- [动态规划算法](src/main/java/org/algorithm/chenjk/base/DPAlgorithm.java)
 
-对于给定的下标，有以下公式：
+## 剑指offer
+- [S119-L? 给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度](src/main/java/org/algorithm/chenjk/lc/offer/LC_Offer119.java)
+- [S04-L240 在一个 n * m 的二维数组中，每一行都按照从左到右 非递减的顺序排序，每一列都按照从上到下非递减的顺序排序. 输入这样的一个二维数组和一个整数，判断数组中是否含有该整数](src/main/java/org/algorithm/chenjk/lc/offer/Offer04_L240.java)
+- [S07-L105 输入某二叉树的前序遍历和中序遍历的结果，请构建该二叉树并返回其根节点。假设输入的前序遍历和中序遍历的结果中都不含重复的数字](src/main/java/org/algorithm/chenjk/lc/offer/Offer07_L105.java)
 
-PS: 数组从1起始的情况
-parent(i) = i / 2 [整数位]
-
-left_child(i) = 2 * i
-
-right_child(i) = 2 * i + 1
-
-如果数组从Zero-based
-公式需调整：
-- parent(i) = (i - 1) / 2
-- left_child(i) = 2 * i + 1
-- right_child(i) = 2 * (i + 1)
-
-如下图：
-![img_1.png](doc/heap/img_1.png)
-
-### 二叉堆分类
-二叉堆一般分为两种：最大堆和最小堆。
-
-最大堆：
-- 最大堆的最大元素在根结点（堆顶）
-- 堆中每个父节点的元素值都大于等于其孩子结点
-
-最小堆：
-- 最小堆的最小元素值在根结点（堆顶）
-- 堆中每个父节点的元素值都小于等于其孩子结点
-
-## 堆排序原理
-堆排序就是把最大堆堆顶的最大数取出，将剩余的堆继续调整为最大堆，再次将堆顶的最大数取出，这个过程持续到剩余数只有一个时结束。
-
-在堆中定义以下几种操作：
-
-- 最大堆调整（Max-Heapify）：将堆的末端子节点作调整，使得子节点永远小于父节点，保证最大堆性质
-- 创建最大堆（Build-Max-Heap）：将堆所有数据重新排序，使其成为最大堆
-- 堆排序（Heap-Sort）：移除位在第一个数据的根节点，并做最大堆调整的递归运算
-
-### 最大堆调整
-传入parent, 数组，根据parent计算 parent\left\right哪个最大，并
-swap替换，再递归调用最大的index做为parent继续调整
-
-### 创建最大堆
-![img_2.png](doc/heap/img_2.png)
+## Have met
+- [L674 给定一个未经排序的整数数组，找到最长且 连续递增的子序列，并返回该序列的长度](src/main/java/org/algorithm/chenjk/lc/a_usual/LC674.java)
 
 
-### 堆排序
-堆排序（Heap-Sort）是堆排序的接口算法，Heap-Sort先调用Build-Max-Heap将数组改造为最大堆，然后将堆顶和堆底元素交换，之后将底部上升，最后重新调用Max-Heapify保持最大堆性质。由于堆顶元素必然是堆中最大的元素，所以一次操作之后，堆中存在的最大元素被分离出堆，重复n-1次之后，数组排列完毕。整个流程如下图：
-![img_3.png](doc/heap/img_3.png)
-pop出index[0]即最大的值，剩余的重新调整为最大堆
+## Normal
+- [L1 hashTable：两数之和: 给定一个整数数组 nums 和一个整数目标值 target，找到并返回下标](src/main/java/org/algorithm/chenjk/lc/hashtable/L1.java)
+- [L2 链表：给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。请你将两个数相加，并以相同形式返回一个表示和的链表](src/main/java/org/algorithm/chenjk/lc/linkedlist/L2.java)
+- [L4 中位数：寻找两个正序数组的中位数:给定两个大小分别为 m 和 n 的正序（从小到大）数组nums1 和nums2, 请你找出并返回这两个正序数组的 中位数](src/main/java/org/algorithm/chenjk/lc/L4.java)
+- [L2373 矩阵：给你一个大小为 n x n 的整数矩阵 grid。生成一个大小为 (n - 2) x (n - 2) 的整数矩阵 maxLocal ，并满足： maxLocal[i][j] 等于 grid 中以 i + 1 行和 j + 1 列为中心的 3 x 3 矩阵中的 最大值 。换句话说，我们希望找出 grid 中每个 3 x 3 矩阵中的最大值。](src/main/java/org/algorithm/chenjk/lc/matrix/L2373.java)
+
+
+
+
+
 
