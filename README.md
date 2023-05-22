@@ -23,10 +23,16 @@
 - [LC64  m x n网格最小路径和](src/main/java/org/algorithm/chenjk/base/dp/LC64.java)
 - [LC129 二叉树中的最大路径和](src/main/java/org/algorithm/chenjk/base/dp/LC124.java)
 - [LC174 地下城游戏](src/main/java/org/algorithm/chenjk/base/dp/LC174.java)
+- [LC516 最长回文子序列](src/main/java/org/algorithm/chenjk/base/dp/LC516.java)
 
-### Other
-- [贪心算法](src/main/java/org/algorithm/chenjk/base/GreedyAlgorithm.java)
-- [动态规划算法](src/main/java/org/algorithm/chenjk/base/DPAlgorithm.java)
+### Greedy
+- [LC2279 装满石头的背包的最大数量](src/main/java/org/algorithm/chenjk/base/greedy/LC2279.java)
+- [IV16 部分排序](src/main/java/org/algorithm/chenjk/base/greedy/IV16.java)
+- [Offer019_L680 最多删除一个字符得到回文](src/main/java/org/algorithm/chenjk/base/greedy/Offer019_L680.java)
+
+### Other示例
+- [贪心算法: 纸币支付](src/main/java/org/algorithm/chenjk/base/GreedyAlgorithm.java)
+- [动态规划算法: 数字三角形](src/main/java/org/algorithm/chenjk/base/DPAlgorithm.java)
 
 ## 剑指offer
 - [S119-L? 给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度](src/main/java/org/algorithm/chenjk/lc/offer/LC_Offer119.java)
