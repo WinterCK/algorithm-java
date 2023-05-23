@@ -29,6 +29,9 @@
 - [LC2279 装满石头的背包的最大数量](src/main/java/org/algorithm/chenjk/base/greedy/LC2279.java)
 - [IV16 部分排序](src/main/java/org/algorithm/chenjk/base/greedy/IV16.java)
 - [Offer019_L680 最多删除一个字符得到回文](src/main/java/org/algorithm/chenjk/base/greedy/Offer019_L680.java)
+- [LC11 盛最多水的容器](src/main/java/org/algorithm/chenjk/base/greedy/LC11.java)
+- [LC1090 受标签影响的最大值](src/main/java/org/algorithm/chenjk/base/greedy/LC1090.java)
+- [Offer045 把数组排成最小的数: [10,2]->"102"](src/main/java/org/algorithm/chenjk/base/greedy/Offer045.java)
 
 ### Other示例
 - [贪心算法: 纸币支付](src/main/java/org/algorithm/chenjk/base/GreedyAlgorithm.java)
