@@ -18,7 +18,7 @@ public class MergeSort {
 
     private static void mergeSort(int[] nums) {
         int low = 0;
-        int high = nums.length -1;
+        int high = nums.length - 1;
         sort(nums, low, high);
     }
 
@@ -34,17 +34,19 @@ public class MergeSort {
         int mid = (low + high) / 2;
         if (low < high) {
             sort(nums, low, mid);
-            sort(nums, mid +1, high);
+            sort(nums, mid + 1, high);
             merge(nums, low, mid, high);
         }
     }
 
     private static void merge(int[] nums, int low, int mid, int high) {
-        int[] tmp = new int[high - low + 1]; // 分配新的地址空间
+        // 分配新的地址空间
+        int[] tmp = new int[high - low + 1];
         int i = low;
         int j = mid + 1;
         int k = 0;
-        while (i <= mid && j<= high) {
+        // 归并的关键, 选小的放入临时数组中
+        while (i <= mid && j <= high) {
             if (nums[i] < nums[j]) {
                 tmp[k++] = nums[i++];
             } else {

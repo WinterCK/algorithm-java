@@ -29,13 +29,12 @@ public class InsertSort {
         for (int i = 0; i < nums.length; i++) {
             // 每次j 都是把num[j]和比他小的比，一直用tmp替换到已排好序的数组中，使其加入num[j]并排好序
             for (int j = i; j > 0; j--) {
-                if (nums[j] < nums[j-1]) {
+                if (nums[j] < nums[j - 1]) {
                     int tmp = nums[j];
-                    nums[j] = nums[j-1];
-                    nums[j-1] = tmp;
+                    nums[j] = nums[j - 1];
+                    nums[j - 1] = tmp;
                 }
             }
-
         }
 
     }

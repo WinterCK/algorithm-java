@@ -22,7 +22,7 @@ public class QuickSort {
      */
     private static void quickSort(int[] nums) {
         int low = 0;
-        int high = nums.length -1;
+        int high = nums.length - 1;
         quickSort(nums, low, high);
     }
 
@@ -35,10 +35,10 @@ public class QuickSort {
         int pivot = nums[low]; // 也可以随机取值，尽量到nLogN
         while (i < j) {
             // j和i的两个while是有强制的顺序要求的，必须优先找到比 pivot 小的值，否则结果会错误(i会先++增大)
-            while (nums[j] >= pivot && i<j) {
+            while (nums[j] >= pivot && i < j) {
                 j--; // 右边直到找到比 pivot 小的值
             }
-            while (nums[i] <= pivot && i<j) {
+            while (nums[i] <= pivot && i < j) {
                 i++; // 直到左边找到比 pivot 大的值
             }
             if (i < j) {
@@ -53,7 +53,7 @@ public class QuickSort {
         nums[i] = pivot;
         System.out.println(Arrays.toString(nums));
         // 继续拆分
-        quickSort(nums, low, i-1);
-        quickSort(nums, i+1, high);
+        quickSort(nums, low, i - 1);
+        quickSort(nums, i + 1, high);
     }
 }

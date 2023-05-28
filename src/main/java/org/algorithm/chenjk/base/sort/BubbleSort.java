@@ -30,7 +30,7 @@ public class BubbleSort {
                 if (nums[j] > nums[j + 1]) {
                     tmp = nums[j];
                     nums[j] = nums[j + 1];
-                    nums[j +1] = tmp;
+                    nums[j + 1] = tmp;
                 }
             }
         }
