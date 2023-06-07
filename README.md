@@ -37,6 +37,9 @@
 - [贪心算法: 纸币支付](src/main/java/org/algorithm/chenjk/base/GreedyAlgorithm.java)
 - [动态规划算法: 数字三角形](src/main/java/org/algorithm/chenjk/base/DPAlgorithm.java)
 
+## USUAL
+- [L648 单词替换-字典树](src/main/java/org/algorithm/chenjk/lc/a_usual/LC648.java)
+
 ## 剑指offer
 - [S119-L? 给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度](src/main/java/org/algorithm/chenjk/lc/offer/LC_Offer119.java)
 - [S04-L240 在一个 n * m 的二维数组中，每一行都按照从左到右 非递减的顺序排序，每一列都按照从上到下非递减的顺序排序. 输入这样的一个二维数组和一个整数，判断数组中是否含有该整数](src/main/java/org/algorithm/chenjk/lc/offer/Offer04_L240.java)
