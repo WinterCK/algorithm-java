@@ -1,4 +1,8 @@
 HELP.md
+
+# practice
+src/main/java/org/algorithm/chenjk/practice/z*
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

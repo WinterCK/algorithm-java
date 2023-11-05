@@ -39,6 +39,7 @@ public class LC2279 {
             if (additionalRocks == 0 || initLen == remainCap.length) {
                 return initLen;
             }
+            // remainCap=0即背包本来已满的，-remainCap相当于-0, initLen也会++
             if (additionalRocks >= remainCap[i]) {
                 additionalRocks = additionalRocks - remainCap[i];
                 initLen++;
