@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * @class: MaxHeap 大顶堆: 根节点的数据为最大值
  * @description: 堆排序 O(nlogn)
+ * 二叉树： parent = (i - 1) / 2, left = 2 * i + 1, right = 2 * (i + 1)
  * @author: jack
  * @create: 2023-04-23 21:56
  **/

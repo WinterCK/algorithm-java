@@ -21,8 +21,9 @@ public class L2 {
         ListNode root2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         ListNode res = addTwoNumbers(root1, root2);
         System.out.println(new Gson().toJson(res));
-
     }
+
+
 
     /**
      * 数学运算 ,时间O(1)

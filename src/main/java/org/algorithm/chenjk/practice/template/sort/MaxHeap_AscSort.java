@@ -32,13 +32,7 @@ public class MaxHeap_AscSort {
      * @param nums 数组
      */
     public static void heapAscSort(int[] nums) {
-        int heapSize = nums.length;
-        buildMaxHeapify(nums);
-        for (int i = nums.length - 1; i > 0; i--) {
-            swap(nums, 0, i); // 节点 num[length - 1] 为最大值，因此为升序排序
-            heapSize = heapSize - 1;     // 通过减小headSize，去掉节点i
-            maxHeapify(nums, 0, heapSize);  // 还原位置，避免违反最大堆性质
-        }
+
     }
 
     /**
@@ -46,11 +40,7 @@ public class MaxHeap_AscSort {
      * @param nums 数组
      */
     private static void buildMaxHeapify(int[] nums) {
-        // length最大值-1/2 就等于 他的parent值，即为深度-1的最大值下标，传入parent并一直 -- 来排序所有堆
-        int parentIndex = parent(nums.length);
-        for (int i = parentIndex; i >= 0; i--) {
-            maxHeapify(nums, i, nums.length);
-        }
+
     }
 
     /**
@@ -60,23 +50,7 @@ public class MaxHeap_AscSort {
      * @param heapSize 堆size
      */
     private static void maxHeapify(int[] nums, int index, int heapSize) {
-        int l = left(index);
-        int r = right(index);
-        int maxIndex = index;
-        // l 和 r 已经过 *2的计算，因此要判断 < heapSize
-        if (l < heapSize && nums[l] > nums[maxIndex]) {
-            maxIndex = l;
-        }
-        // 必须跟maxIndex判断
-        if (r < heapSize && nums[r] > nums[maxIndex]) {
-            maxIndex = r;
-        }
-        if (maxIndex != index) {
-            swap(nums, maxIndex, index);
 
-            // 由于发生了变化，递归调用避免违反最大堆的性质
-            maxHeapify(nums, maxIndex, heapSize);
-        }
 
     }
 

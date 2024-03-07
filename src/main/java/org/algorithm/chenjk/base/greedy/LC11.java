@@ -30,6 +30,7 @@ public class LC11 {
         int i = 0;
         int j = height.length - 1;
         int max = 0;
+        // 实际是双指针移动一轮，并算出移动后的每次的面积，只保留最大的，移动判断根据height进行判断
         while (i < j) {
             int area = Math.min(height[i], height[j]) * (j - i);
             max = Math.max(max, area);
