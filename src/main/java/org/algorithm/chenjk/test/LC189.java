@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author: jack
  * @create: 2022-03-06 14:23
  **/
-public class LC3 {
+public class LC189 {
 
     public static void main(String[] args) {
         int[] nums = new int[] {1,2,3,4,5,6,7};
