@@ -1,14 +1,12 @@
 # 记录
 
 ## Basic
-### Sort
-- [冒泡排序](src/main/java/org/algorithm/chenjk/base/sort/BubbleSort.java)
-- [插入排序](src/main/java/org/algorithm/chenjk/base/sort/InsertSort.java)
-- [归并排序](src/main/java/org/algorithm/chenjk/base/sort/MergeSort.java)
-- [快速排序](src/main/java/org/algorithm/chenjk/base/sort/QuickSort.java)
-- [堆排序: 最大堆升序](src/main/java/org/algorithm/chenjk/base/sort/heap/MaxHeap_AscSort.java)
-- [堆排序: 最小堆降序](src/main/java/org/algorithm/chenjk/base/sort/heap/MinHeap_DescSort.java)
-- [二叉树前中后序遍历](src/main/java/org/algorithm/chenjk/base/tree/BinaryTree.java)
+- [LRU Cache](src/main/java/org/algorithm/chenjk/base/LRUCache.java)
+
+### 回溯Backtracking
+- [L51 N 皇后](src/main/java/org/algorithm/chenjk/base/backtrack/L51.java)
+- [L78 子集--不包含重复](src/main/java/org/algorithm/chenjk/base/backtrack/L78.java)
+- [L90 子集 II--可能包含重复元素](src/main/java/org/algorithm/chenjk/base/backtrack/L90.java)
 
 ### Search
 - [L124 DFS 二叉树的最大路径和](src/main/java/org/algorithm/chenjk/lc/search/LC124_DFS_DP.java)
@@ -18,6 +16,13 @@
 - [L100 DFS 相同的树](src/main/java/org/algorithm/chenjk/lc/search/LC100_DFS.java)
 
 ### DP
+- [46 01背包](src/main/java/org/algorithm/chenjk/base/dp/bag/Kama46.java)
+- [L416 分割等和子集 (01背包)](src/main/java/org/algorithm/chenjk/base/dp/bag/L416.java)
+- [L474 一和零](src/main/java/org/algorithm/chenjk/base/dp/bag/L474.java)
+- [L1049 最后一块石头的重量 II](src/main/java/org/algorithm/chenjk/base/dp/bag/L1049.java)
+- [52 完全背包问题](src/main/java/org/algorithm/chenjk/base/dp/bag/comlete/CompleteBagKama52.java)
+- [L139 单词拆分](src/main/java/org/algorithm/chenjk/base/dp/bag/comlete/L139.java)
+- [L377 组合总和 Ⅳ](src/main/java/org/algorithm/chenjk/base/dp/bag/comlete/L377.java)
 - [LC62 不同路径: 左上角到右下角的最大路径数量](src/main/java/org/algorithm/chenjk/base/dp/LC62.java)
 - [LC63 不同路径2: 存在障碍物时最大路径数量](src/main/java/org/algorithm/chenjk/base/dp/LC63.java)
 - [LC64  m x n网格最小路径和](src/main/java/org/algorithm/chenjk/base/dp/LC64.java)
@@ -55,6 +60,14 @@
 - [L4 中位数：寻找两个正序数组的中位数:给定两个大小分别为 m 和 n 的正序（从小到大）数组nums1 和nums2, 请你找出并返回这两个正序数组的 中位数](src/main/java/org/algorithm/chenjk/lc/L4.java)
 - [L2373 矩阵：给你一个大小为 n x n 的整数矩阵 grid。生成一个大小为 (n - 2) x (n - 2) 的整数矩阵 maxLocal ，并满足： maxLocal[i][j] 等于 grid 中以 i + 1 行和 j + 1 列为中心的 3 x 3 矩阵中的 最大值 。换句话说，我们希望找出 grid 中每个 3 x 3 矩阵中的最大值。](src/main/java/org/algorithm/chenjk/lc/matrix/L2373.java)
 
+### Sort
+- [冒泡排序](src/main/java/org/algorithm/chenjk/base/sort/BubbleSort.java)
+- [插入排序](src/main/java/org/algorithm/chenjk/base/sort/InsertSort.java)
+- [归并排序](src/main/java/org/algorithm/chenjk/base/sort/MergeSort.java)
+- [快速排序](src/main/java/org/algorithm/chenjk/base/sort/QuickSort.java)
+- [堆排序: 最大堆升序](src/main/java/org/algorithm/chenjk/base/sort/heap/MaxHeap_AscSort.java)
+- [堆排序: 最小堆降序](src/main/java/org/algorithm/chenjk/base/sort/heap/MinHeap_DescSort.java)
+- [二叉树前中后序遍历](src/main/java/org/algorithm/chenjk/base/tree/BinaryTree.java)
 
 
 
